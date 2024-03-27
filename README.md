@@ -18,7 +18,13 @@ npx prisma migrate dev --name initial
 npx prisma migrate deploy
 ```
 
-Run locally / build
+Run locally
+
+```bash
+npm run dev
+```
+
+Build Deployment
 
 ```bash
 npm run start
