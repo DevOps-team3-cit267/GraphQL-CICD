@@ -67,6 +67,3 @@ jobs:
           app-name: "GraphQlTeam3"
           slot-name: "Production"
           package: .
-
-      - name: "Start server"
-        run: npm run start
