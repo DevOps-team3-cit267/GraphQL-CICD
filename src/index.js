@@ -9,9 +9,6 @@ import resolvers from "./resolvers/index.js";
 const prisma = new PrismaClient();
 export { prisma };
 
-// specify port
-const PORT = process.env.PORT || 4000;
-
 // Create Apollo Server
 const server = new ApolloServer({
   typeDefs,
@@ -23,7 +20,7 @@ async function startServer() {
   try {
     await prisma.$connect();
     console.log("Connected to SQLite database");
-    await server.listen(PORT);
+    await server.listen(8080);
     console.log(`Server ready at ${server.graphqlPath}`);
   } catch (error) {
     console.error("Error connecting to database:", error);
