@@ -132,3 +132,5 @@ dist
 # Prisma ignore
 prisma/migrations/*
 prisma/todo.db
+
+*.rest
