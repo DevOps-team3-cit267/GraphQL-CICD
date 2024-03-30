@@ -13,6 +13,8 @@ export { prisma };
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  playground: true,
+  introspection: true,
 });
 
 // Connect to Prisma
