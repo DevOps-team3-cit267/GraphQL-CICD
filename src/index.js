@@ -20,7 +20,7 @@ async function startServer() {
   try {
     await prisma.$connect();
     console.log("Connected to SQLite database");
-    await server.listen(8080);
+    await server.listen(4000);
     console.log(`Server ready at ${server.graphqlPath}`);
   } catch (error) {
     console.error("Error connecting to database:", error);
